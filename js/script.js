@@ -1,6 +1,11 @@
-function init()
-{
-	alert('it works');
+
+
+function initMap() {
+  var map;
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
 }
 
-google.maps.event.addDomListener(window, 'load', init);
+window.initMap = initMap;
