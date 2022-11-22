@@ -6,12 +6,16 @@ function initMap() {
     center: { lat: -34.397, lng: 150.644 },
     zoom: 8,
   });
-}
 
-  var marker = new google.maps.Marker({
+   var marker = new google.maps.Marker({
     position: { lat: -34.397, lng: 150.644 },
     map: map,
   });
 
+  var infowindow = new google.maps.InfoWindow({
+    content:"Favourite place"
+  });
+    infowindow.open(map, marker);
+}
 
 window.initMap = initMap;
