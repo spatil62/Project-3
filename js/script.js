@@ -29,8 +29,7 @@ const svgMarker = {
     icon: svgMarker,
     map: map,
   });
-
-
+  
     infowindow.open(map, marker);
 }
 
