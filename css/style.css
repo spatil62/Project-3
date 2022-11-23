@@ -40,6 +40,7 @@ nav ul {
 h1 {
   margin: 1em auto;
   background-color: #85850f;
+      text-align: center;
 }
 
 h2,h4,h5 {
@@ -83,8 +84,8 @@ img {
 
 .padding-10 {
   padding: 10px;
-  margin-left: 10px;
 }
+
 
 .title {
   text-align: center;
@@ -120,14 +121,76 @@ img {
 #map{
   position: absolute;
     border-radius: 10px;
-   top: 14%;
-  width: 60%;
-  height: 70%;
+    left: 24%;
+   top: 30%;
+  width: 50%;
+  height: 60%;
   right: 20%;
   border: solid black 5px;
 }
-/*html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }*/
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+
+  .img-right{
+  width: 100%;
+  padding-left: 20px;
+  }
+
+  .img-left{
+  width: 100%;
+  padding-right: 20px;
+  }
+
+  .indiatitle
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+   text-align: center;
+  }
+
+  .title
+  {
+  text-align: center;
+  }
+
+  .video-center
+  {
+  margin-left: 24%;
+  }
+
+}
+
+
+@media screen and (min-width: 610px) and (max-width: 1024px) {
+
+  .img-right{
+  padding-left: 20px;
+  height: 300px;
+  width: 300px;
+  }
+
+  .img-left{
+  height: 300px;
+  width: 300px;
+  padding-right: 20px;
+  }
+
+  .indiatitle
+  {
+   text-align: center;
+  }
+
+  .title
+  {
+  text-align: center;
+  }
+
+  .video-center
+  {
+  margin-left: 2%;
+  }
+
+}
+
+
+
